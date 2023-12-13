@@ -1,0 +1,41 @@
+{
+    "name": "Link IMDB and TMDB",
+    "description": "Opens the corresponding IMDB/TMDB/Letterboxd movie/tv show page in just one click.",
+    "version": "0.1",
+    "manifest_version": 3,
+    "action": {
+        "default_title": "Link IMDB and TMDB"
+    },
+    "icons": {
+        "16": "assets/icon/icon-16.png",
+        "24": "assets/icon/icon-24.png",
+        "32": "assets/icon/icon-32.png",
+        "48": "assets/icon/icon-48.png"
+    },
+    "host_permissions": ["*://*.themoviedb.org/*", "*://*.imdb.com/*"],
+    "web_accessible_resources": [
+        {
+            "matches": ["*://*.themoviedb.org/*", "*://*.imdb.com/*"],
+            "resources": ["secrets.json", "assets/loading.gif", "assets/letterboxd.png", "src/imdb/utils/*", "src/tmdb/utils/*"],
+            "use_dynamic_url": true
+        }
+    ],
+    "content_scripts": [
+        {
+            "matches": ["*://*.imdb.com/title/*/"],
+            "js": ["src/imdb/imdb.js"],
+            "css": ["css/imdb.css"]
+        },
+        {
+            "matches": ["*://*.themoviedb.org/movie/*", "*://*.themoviedb.org/tv/*"],
+            "exclude_globs": [
+                "*://*.themoviedb.org/movie",
+                "*://*.themoviedb.org/tv",
+                "*://*.themoviedb.org/movie/*/*",
+                "*://*.themoviedb.org/tv/*/*"
+            ],
+            "js": ["src/tmdb/tmdb.js"],
+            "css": ["css/tmdb.css"]
+        }
+    ]
+}

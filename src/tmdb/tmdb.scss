@@ -1,0 +1,46 @@
+#linker- {
+    &parent {
+        margin-top: 20px;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &imdb-svg-bg {
+        fill: #c59f00 !important;
+    }
+
+    &divider {
+        border-left: 2px solid rgba(232, 230, 227, 0.5) !important;
+        height: 20px;
+        border-radius: 10px;
+        margin-left: 10px;
+    }
+
+    &letterboxd {
+        height: 22px;
+        border-radius: 4px;
+    }
+
+    &loading {
+        height: 20px;
+        margin-left: 10px;
+    }
+
+    &imdb-container {
+        display: flex;
+        align-items: flex-start;
+        margin-left: 10px;
+    }
+
+    &imdb-rating {
+        margin-left: 10px;
+    }
+}
+
+html.k-mobile #linker- {
+    &parent {
+        margin-top: unset;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
