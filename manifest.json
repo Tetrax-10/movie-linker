@@ -1,10 +1,10 @@
 {
-    "name": "Link IMDB and TMDB",
+    "name": "Movie Linker",
     "description": "Opens the corresponding IMDB/TMDB/Letterboxd movie/tv show page in just one click.",
     "version": "0.1",
     "manifest_version": 3,
     "action": {
-        "default_title": "Link IMDB and TMDB"
+        "default_title": "Movie Linker"
     },
     "icons": {
         "16": "assets/icon/icon-16.png",
