@@ -28,12 +28,7 @@
         },
         {
             "matches": ["*://*.themoviedb.org/movie/*", "*://*.themoviedb.org/tv/*"],
-            "exclude_globs": [
-                "*://*.themoviedb.org/movie",
-                "*://*.themoviedb.org/tv",
-                "*://*.themoviedb.org/movie/*/*",
-                "*://*.themoviedb.org/tv/*/*"
-            ],
+            "exclude_globs": ["*://*.themoviedb.org/movie", "*://*.themoviedb.org/tv", "*://*.themoviedb.org/movie/*/*", "*://*.themoviedb.org/tv/*/*"],
             "js": ["src/tmdb/tmdb.js"],
             "css": ["css/tmdb.css"]
         }
