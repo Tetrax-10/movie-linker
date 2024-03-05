@@ -1,4 +1,6 @@
 ;(async () => {
+    if (!/^\/title\/tt\d+\/?$/.test(location.pathname)) return
+
     const Utils = (await import(chrome.runtime.getURL("src/imdb/utils/utils.js")))?.default
 
     const isMobile = location.host.includes("m.imdb")
