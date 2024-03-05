@@ -1,7 +1,7 @@
 {
     "name": "Movie Linker",
     "description": "Opens the corresponding IMDB/TMDB/Letterboxd movie/tv show page in just one click.",
-    "version": "0.1",
+    "version": "0.2",
     "manifest_version": 3,
     "action": {
         "default_title": "Movie Linker"
