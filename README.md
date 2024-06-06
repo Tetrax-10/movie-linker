@@ -2,7 +2,7 @@
 
 Opens the corresponding IMDB/TMDB/Letterboxd movie/tv show page in just one click. Also adds the ability to see IMDB ratings on TMDB pages.
 
-# ⚠️ This extension has been converted to Tampermonkey script. This extension is no longer maintained.
+# ⚠️ This extension has been converted to [Tampermonkey script](https://github.com/Tetrax-10/imdb-tmdb-linker). This extension is no longer maintained.
 
 ## Screenshots
 
